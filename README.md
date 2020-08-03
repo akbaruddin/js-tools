@@ -2,19 +2,19 @@
 
 ## Setup
 
-### Create `package.json` file
+Create `package.json` file
 
 ```bash
 pnpm init -y
 ```
 
-### Install Babel and Flow bin
+Install Babel and Flow bin
 
 ```bash
 pnpm i -D @babel/{cli,core,preset-flow} flow-bin
 ```
 
-### Create `.babelrc` file
+Create `.babelrc` file
 
 ```json
 {
@@ -22,30 +22,27 @@ pnpm i -D @babel/{cli,core,preset-flow} flow-bin
 }
 ```
 
-### Generate `.flowconfig` file
+Generate `.flowconfig` file
 
 ```bash
 pnpx flow init
 ```
-### Check flow error and status
+
+Check flow error and status
 
 ```bash
 pnpx flow status
 ```
 
-### Add compile on `package.json`
+Add compile on `package.json`
 
 ```javascript
-//...................
-    "scripts": {
-        // .............
-        // Other command
-        "build": "babel src/ -d lib/"
-    },
-//...................
+"scripts": {
+    "build": "babel src/ -d lib/"
+},
 ```
 
-### add `@flow` on Source file
+add `@flow` on Source file
 
 `main.js`
 
