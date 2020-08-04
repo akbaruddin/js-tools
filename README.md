@@ -50,6 +50,10 @@ File: [number_to_string.js](./number_to_string.js)
 
 File: [attributes.js](./attributes.js)
 
+## Time since
+
+File: [timeSince](./timeSince.js)
+
 ## Tips
 
 ### Converting `NodeList` to `Arrays`
