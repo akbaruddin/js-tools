@@ -37,3 +37,4 @@ user1.contact.telephone = 07054394926;
 // this will work because the nested object is not frozen
 
 console.log(user);
+
