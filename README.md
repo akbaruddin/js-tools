@@ -45,3 +45,7 @@ String(value);
 ```
 
 File: [number_to_string.js](./number_to_string.js)
+
+## attributes extract
+
+File: [attributes.js](./attributes.js)
