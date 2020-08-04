@@ -34,3 +34,14 @@ Const File: [const_file.js](./const_file.js)
 To disable any changes to the object we need `Object.freeze()`.
 
 Freeze File: [freeze_file.js](./freeze_file.js)
+
+## number to string
+
+Best for String Conversion
+
+```Javascript
+const value = 12345;
+String(value);
+```
+
+File: [number_to_string.js](./number_to_string.js)
