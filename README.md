@@ -49,3 +49,40 @@ File: [number_to_string.js](./number_to_string.js)
 ## attributes extract
 
 File: [attributes.js](./attributes.js)
+
+## Tips
+
+### Converting `NodeList` to `Arrays`
+
+If you run the `document.querySelectorAll("p")` function, it will probably return an array of DOM elements, the `NodeList` object. But this object doesn’t have all the array’s functions, like: `sort()`, `reduce()`, `map()`, `filter()`.
+
+To enable these and many other native array functions, you need to convert `NodeList` into `Arrays`. To run this technique, just use this function: `[].slice.call(elements)`:
+
+```javascript
+// NodeList
+var elements = document.querySelectorAll("p");
+
+// Now the NodeList is an array ES5
+var arrayElements = [].slice.call(elements);
+
+// This is another way of converting NodeList to Array var ES6
+arrayElements = Array.from(elements);
+```
+
+## Null
+
+- `null` is assigned.
+- `null` is always intentional.
+- `null` indicates a lack of value.
+
+## Undefined
+
+- `undefined` can be assigned.
+- `undefined` is often unintentional.
+- `undefined` indicates a variable is declared but not defined.
+
+## Both
+
+- Both `null` and `undefined` are primitives.
+- Both `null` and `undefined` are `falsy` values.
+- `null` and `undefined` are loosely equal.
