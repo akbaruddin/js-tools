@@ -14,3 +14,7 @@ File: `call_apply.js`
 `bind()` method creates a new function that, when called, has its this keyword set to the provided value.
 
 File: `bind.js`
+
+## Date function
+
+File: `dates.js`
